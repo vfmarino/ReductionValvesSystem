@@ -1,0 +1,12 @@
+.container {
+  margin-top: 10vh;
+  margin-left: 25%;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 25%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}

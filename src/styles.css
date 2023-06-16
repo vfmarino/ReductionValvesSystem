@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  background-color: rgb(224, 245, 250);
+  --color-header: rgb(0, 29, 63);
+  margin: 0;
+  padding: 0;
+}
