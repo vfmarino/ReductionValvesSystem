@@ -1,0 +1,19 @@
+.container {
+  margin-top: 10vh;
+  margin-left: 25%;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 25%;
+  font-size: 1vw;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}

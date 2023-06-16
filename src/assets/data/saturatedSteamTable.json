@@ -1,0 +1,22 @@
+{
+  "vapor_saturado": [
+    {
+      "pressao_relativa": 0.0,
+      "pressao_absoluta": 1.0332,
+      "temperatura": 100.0,
+      "volume_especifico": 1.672,
+      "calor_sensivel": 419.0,
+      "calor_total": 2501.0,
+      "calor_latente": 2082.0
+    },
+    {
+      "pressao_relativa": 0.1,
+      "pressao_absoluta": 1.1365,
+      "temperatura": 100.2,
+      "volume_especifico": 1.647,
+      "calor_sensivel": 417.0,
+      "calor_total": 2499.0,
+      "calor_latente": 2082.0
+    }
+  ]
+}

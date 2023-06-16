@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProcessDataComponent } from './process-data/process-data.component';
 import { ValveDataSheetComponent } from './valve-data-sheet/valve-data-sheet.component';
 import { FormsModule } from '@angular/forms';
+import { SaturatedSteamPropertiesComponent } from './saturated-steam-properties/saturated-steam-properties.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ProcessDataComponent,
     ValveDataSheetComponent,
+    SaturatedSteamPropertiesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

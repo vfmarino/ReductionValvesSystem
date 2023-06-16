@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="form">
+    <form>
+      <div class="formulario">
+        <label for="">Pressão de Entrada:</label>
+        <input type="text" name="P" [(ngModel)]="P" required />
+      </div>
+    </form>
+  </div>
+  <div class="calcular">
+    <button (click)="calculate()">Calcular</button>
+  </div>
+  <div class="resultados">
+    <table>
+      <th>Pressão Absoluta {{ pressaoAbsoluta }}</th>
+      <th>Temperatura{{ temperaturaC }}</th>
+      <th>Volume Específico Liquído {{ volumeLiquido }}</th>
+      <th>Volume Específico Vapor {{ volumevapor }}</th>
+      <th>Calor Sensivel{{ sensivel }}</th>
+      <th>Calor Latente{{ latente }}</th>
+      <th>Calor Total{{ total }}</th>
+    </table>
+  </div>
+</div>

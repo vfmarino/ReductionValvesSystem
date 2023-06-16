@@ -26,3 +26,8 @@ Criar Rotas em app-routing.
 add FormsModule no arquivo app.module
 
 ### 1 Commit - Frist Components
+
+### 2 Passo
+
+Criado tabela de vapor saturado em Json
+Criado serviço para calcular diametro da tubulação
