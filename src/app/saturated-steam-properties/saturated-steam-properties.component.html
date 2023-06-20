@@ -2,7 +2,7 @@
   <div class="form">
     <form>
       <div class="formulario">
-        <label for="">Pressão de Entrada:</label>
+        <label for="">Pressão Relativa(Kgf/cm²):</label>
         <input type="text" name="P" [(ngModel)]="P" required />
       </div>
     </form>
@@ -12,13 +12,24 @@
   </div>
   <div class="resultados">
     <table>
-      <th>Pressão Absoluta {{ pressaoAbsoluta }}</th>
-      <th>Temperatura{{ temperaturaC }}</th>
-      <th>Volume Específico Liquído {{ volumeLiquido }}</th>
-      <th>Volume Específico Vapor {{ volumevapor }}</th>
-      <th>Calor Sensivel{{ sensivel }}</th>
-      <th>Calor Latente{{ latente }}</th>
-      <th>Calor Total{{ total }}</th>
+      <tr>
+        <th>Pressão Absoluta (Kgf/cm²)</th>
+        <th>Temperatura (°C)</th>
+        <th>Volume Específico Liquído (m³/Kg)</th>
+        <th>Volume Específico Vapor (m³/Kg)</th>
+        <th>Calor Sensivel (Kcal/Kg)</th>
+        <th>Calor Latente (Kcal/Kg)</th>
+        <th>Calor Total (Kcal/Kg)</th>
+      </tr>
+      <tr>
+        <th>{{ pressaoAbsoluta | number : ".2" }}</th>
+        <th>{{ temperaturaC | number : ".2" }}</th>
+        <th>{{ volumeLiquido | number : ".2" }}</th>
+        <th>{{ volumevapor | number : ".2" }}</th>
+        <th>{{ sensivel | number : ".2" }}</th>
+        <th>{{ latente | number : ".2" }}</th>
+        <th>{{ total | number : ".2" }}</th>
+      </tr>
     </table>
   </div>
 </div>

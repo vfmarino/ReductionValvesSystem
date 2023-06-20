@@ -25,9 +25,21 @@ Criação dos componentes pelo terminal
 Criar Rotas em app-routing.
 add FormsModule no arquivo app.module
 
-### 1 Commit - Frist Components
+### 1° Commit - Frist Components
 
-### 2 Passo
+### 2° Passo
 
 Criado tabela de vapor saturado em Json
 Criado serviço para calcular diametro da tubulação
+
+Criado um componente para adicionar a Pressão relativa e Calcular os valores da tabela de valor saturado, de acordo com a pressão desejada.
+
+### 2° Commit
+
+### 3° Passo
+
+Adicionado algumas alteraçoes de estilo melhorando Layout.
+
+Criação de um serviço buscando deixar o calculo disponivel para outros componentes.
+Além disso, desacoplando ficaria mais facil para futura manutenção.
+Sendo assim fica separado o calculo de cada propriedade do Vapor Saturado.

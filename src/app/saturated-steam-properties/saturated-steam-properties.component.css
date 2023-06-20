@@ -3,7 +3,7 @@
   margin-left: 25%;
   border: 2px solid black;
   padding: 2vw;
-  width: 25%;
+  width: 36vw;
   font-size: 1vw;
 }
 
@@ -13,7 +13,22 @@
 }
 
 table {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  border-collapse: collapse;
+}
+table tr {
   display: flex;
   flex-direction: column;
+}
+th {
+  border: 1px solid black;
+  width: 18vw;
+}
+button {
+  margin: 1vw;
+  padding: 1vw;
+  background-color: var(--color-header);
+  color: white;
+  font-weight: 500;
 }

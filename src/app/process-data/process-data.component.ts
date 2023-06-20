@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TubulationSizingService } from '../service/tubulation-sizing.service';
 
 @Component({
   selector: 'app-process-data',
@@ -15,15 +14,15 @@ export class ProcessDataComponent implements OnInit {
   material!: string;
   conexao!: string;
 
-  constructor(private tubulationSizingService: TubulationSizingService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 
   calculate() {
-    this.tubulationSizingService.Q = 500; // Atribua o valor desejado para Q
+    /* this.tubulationSizingService.Q = 500; // Atribua o valor desejado para Q
     this.tubulationSizingService.P = 0.2189; // Atribua o valor desejado para P
     this.tubulationSizingService.v = 27.5; // Atribua o valor desejado para v
 
-    this.tubulationSizingService.tubulationSizing();
+    this.tubulationSizingService.tubulationSizing();*/
   }
 }

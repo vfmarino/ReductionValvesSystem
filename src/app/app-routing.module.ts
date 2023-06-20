@@ -5,7 +5,7 @@ import { ProcessDataComponent } from './process-data/process-data.component';
 import { SaturatedSteamPropertiesComponent } from './saturated-steam-properties/saturated-steam-properties.component';
 
 const routes: Routes = [
-  { path: '', component: SaturatedSteamPropertiesComponent },
+  { path: 'home', component: SaturatedSteamPropertiesComponent },
   { path: 'processData', component: ProcessDataComponent },
   { path: 'saturated', component: SaturatedSteamPropertiesComponent },
   { path: 'datasheet', component: ValveDataSheetComponent },
