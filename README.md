@@ -43,3 +43,9 @@ Adicionado algumas alteraçoes de estilo melhorando Layout.
 Criação de um serviço buscando deixar o calculo disponivel para outros componentes.
 Além disso, desacoplando ficaria mais facil para futura manutenção.
 Sendo assim fica separado o calculo de cada propriedade do Vapor Saturado.
+
+### 3° Commit - Decoupling
+
+### 4°Passo
+
+### 4° Commit

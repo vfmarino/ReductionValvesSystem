@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReductionValveService } from '../service/ReductionValve/reduction-valve.service';
+import { Redutora } from '../models/redutora/redutora/redutora.module';
 
 @Component({
   selector: 'app-process-data',
@@ -13,16 +15,24 @@ export class ProcessDataComponent implements OnInit {
   saida!: number;
   material!: string;
   conexao!: string;
+  redutora = new Redutora();
 
-  constructor() {}
+  constructor(private reductionValve: ReductionValveService) {}
 
   ngOnInit(): void {}
 
   calculate() {
-    /* this.tubulationSizingService.Q = 500; // Atribua o valor desejado para Q
-    this.tubulationSizingService.P = 0.2189; // Atribua o valor desejado para P
-    this.tubulationSizingService.v = 27.5; // Atribua o valor desejado para v
-
-    this.tubulationSizingService.tubulationSizing();*/
+    this.reductionValve
+      .sizingAutoOperada(this.entrada, this.saida, this.vazao)
+      .subscribe({
+        next: (resultado: any) => {
+          this.redutora.capacidade = resultado.cv;
+          this.redutora.diametro = resultado.D;
+          this.redutora.porcentagem = resultado.P;
+        },
+        error: (error) => {
+          alert('Não foi possível calcular, houve algum erro.');
+        },
+      });
   }
 }

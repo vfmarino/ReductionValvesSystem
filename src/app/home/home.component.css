@@ -1,0 +1,16 @@
+.container {
+  margin-top: 10vh;
+  margin-left: 25%;
+  border: 2px solid black;
+  padding: 2vw;
+  width: 36vw;
+  font-size: 1vw;
+}
+button {
+  margin: 0.5vw;
+  padding: 0.5vw;
+  background-color: var(--color-header);
+  color: white;
+  font-weight: 600;
+  font-size: 0.7vw;
+}

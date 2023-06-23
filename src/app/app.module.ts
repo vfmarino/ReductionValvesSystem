@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SaturatedSteamPropertiesComponent } from './saturated-steam-properties/saturated-steam-properties.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProcessDataComponent } from './process-data/process-data.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProcessDataComponent } from './process-data/process-data.component';
     ProcessDataComponent,
     ValveDataSheetComponent,
     SaturatedSteamPropertiesComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
