@@ -1,12 +1,189 @@
-.container {
-  margin-top: 10vh;
-  margin-left: 25%;
-  border: 2px solid black;
-  padding: 2vw;
-  width: 25%;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.formulario {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  height: 90vh;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: hidden;
+  margin-top: 2vw;
+}
+
+.data {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.formulario,
+.dadosCliente,
+.dadosProcesso {
+  margin-bottom: 10px;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.container1 label {
+  width: 110px;
+  font-weight: bold;
+  font-size: 65%;
+}
+
+.container1 input,
+.container1 select {
+  flex: 1;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 65%;
+}
+
+.calcular {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.calcular button {
+  padding: 7px 14px;
+  font-size: 60%;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  margin: 0 5px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.result1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result1 th,
+.result1 td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 65%;
+}
+
+.result1 th {
+  background-color: #f2f2f2;
+}
+
+.tableFundoVermelho {
+  background-color: #ffdddd;
+}
+
+.tableFundoVerde {
+  background-color: #ddffdd;
+}
+
+.tableFundoVermelho,
+.tableFundoVerde {
+  font-weight: bold;
+}
+
+.result1 td:first-child,
+.result1 th:first-child {
+  width: 40px;
+}
+
+.result1 td:nth-child(2),
+.result1 th:nth-child(2) {
+  width: 80px;
+}
+
+.result1 td:last-child,
+.result1 th:last-child {
+  width: 80px;
+}
+
+.result1 td,
+.result1 th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result1 input[type="number"] {
+  width: 30px;
+  font-size: 65%;
+}
+
+.result1 label {
+  font-weight: bold;
+  margin-right: 3px;
+  font-size: 65%;
+}
+
+.result1 div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.result1 input,
+.result1 select {
+  flex: 1;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 65%;
+}
+
+@media (max-width: 600px) {
+  .container1 label {
+    width: 70px;
+  }
+
+  .result1 td,
+  .result1 th {
+    font-size: 60%;
+  }
+
+  .result1 input[type="number"] {
+    width: 25px;
+  }
+
+  .result1 label {
+    font-size: 60%;
+  }
+}
+
+img {
+  width: 5vw;
 }

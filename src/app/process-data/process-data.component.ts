@@ -9,6 +9,9 @@ import { Redutora } from '../models/redutora/redutora/redutora.module';
 })
 export class ProcessDataComponent implements OnInit {
   cliente!: string;
+  data!: Date;
+  vendedor!: string;
+  nro!: number;
   fluido!: string;
   vazao!: number;
   entrada!: number;
@@ -16,6 +19,9 @@ export class ProcessDataComponent implements OnInit {
   material!: string;
   conexao!: string;
   redutora = new Redutora();
+  porcentagens = [];
+  result!: { diameter: string; fator: number };
+  factor!: number;
 
   constructor(private reductionValve: ReductionValveService) {}
 
@@ -26,10 +32,14 @@ export class ProcessDataComponent implements OnInit {
       .sizingAutoOperada(this.entrada, this.saida, this.vazao)
       .subscribe({
         next: (resultado: any) => {
-          this.redutora.capacidade = resultado.cv;
-          this.redutora.diametro = resultado.D;
-          this.redutora.porcentagem = resultado.P;
+          this.redutora.capacidade = resultado[0];
+          this.redutora.diametro = resultado[1];
+          this.redutora.porcentagem = resultado[2];
+          this.porcentagens = resultado[3];
+          this.result = resultado[4];
+          console.log(this.result);
         },
+
         error: (error) => {
           alert('Não foi possível calcular, houve algum erro.');
         },
